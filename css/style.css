@@ -19,7 +19,8 @@ h3 {
 }
 
 h2 {
-    margin-bottom: 45px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -145,9 +146,14 @@ li {
     margin-left: 30px;
 }
 
-.filter-option:hover {
+.search-bar-btn:hover,
+.filter-option:hover,
+.filter-label:hover {
     cursor: pointer;
-    background: #f2f2f2;
+}
+
+.filter-option:hover {
+    background: #F2F2F2;
 }
 
 .filter-icon {
@@ -182,4 +188,127 @@ li {
     border: 2px solid #f2F2F2;
     border-radius: 20px;
     color: #0065FC;
+}
+
+/* -- accommodation section --*/
+
+.accommodation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodation-section {
+    width: 880px;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+
+.accommodation-content {
+    width: 800px;
+    height: 540px;
+    margin: 45px 40px 30px;
+}
+
+.accommodation-title {}
+
+.accommodation-cards-container {
+    width: 800px;
+    height: 430px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.accommodation-card {
+    width: 245px;
+    height: 200px;
+    background: white;
+    border-radius: 15px;
+}
+
+.card-image {
+    width: 235px;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    margin: 5px;
+}
+
+.card-description {
+    width: 215px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.rating-stars {
+    color: #D3D3D3;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.most-popular-section-container {
+    width: 420px;
+    height: 620px;
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+
+.most-popular-section {
+    width: 345px;
+    height: 550px;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.most-popular-title-icon {
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.most-popular-cards-container {
+    width: 345px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.most-popular-card {
+    width: 345px;
+    height: 145px;
+    display: flex;
+    border-radius: 15px;
+    background: white;
+}
+
+.card-image2 {
+    width: 130px;
+    height: 135px;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
 }
