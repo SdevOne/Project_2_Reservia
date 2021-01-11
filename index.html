@@ -16,57 +16,69 @@
 
     <!-- Header -->
 
-    <header class="l-container l-header">
+    <header class="main-container header">
         <a href="#" class="header--logo"><img src="images/logo/Reservia.svg" alt="Logo de réservia" /></a>
-        <nav class="header--nav-bar">
-            <ul class="header--nav-list">
-                <a href="#anchor-1" class="header--nav-item">
-                    <li>Hébergements</li>
-                </a>
-                <a href="#anchor-2" class="header--nav-item">
-                    <li>Activités</li>
-                </a>
-                <a href="#" class="header--nav-item">
-                    <li><strong>S'inscrire</strong></li>
-                </a>
-            </ul>
-        </nav>
+        <div class="header--right-side">
+            <nav class="header--nav-bar">
+                <ul class="header--nav-list">
+                    <a href="#anchor-1" class="header--nav-item">
+                        <li>Hébergements</li>
+                    </a>
+                    <a href="#anchor-2" class="header--nav-item">
+                        <li>Activités</li>
+                    </a>
+                </ul>
+            </nav>
+            <a href="#" class="header--registration">
+                S'inscrire
+            </a>
+        </div>
     </header>
 
-    <main class="l-container">
+    <main class="main-container">
 
         <!-- Search form -->
 
-        <section class="l-form">
+        <div class="main-title">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <section class="form">
             <form>
-                <div class="l-search-bar">
+                <div class="search-bar">
                     <i class="fas fa-map-marker-alt search-bar--icon"></i>
                     <input type="search" name="research" placeholder="Localisation" class="search-bar--input-search">
-                    <input type="submit" value="Rechercher" class="search-bar--btn">
+                    <div class="search-bar--btn">
+                        <input type="submit" value="Rechercher" class="search-bar--btn">
+                        <i class="fas fa-search"></i>
+                    </div>
                 </div>
-                <div class="l-filters">
+
+                <div class="filters">
                     <h3 class="filters--title">Filtres</h3>
-                    <button class="filters--button">
-                        <i class="fas fa-money-bill-wave filters--icon icon-color"></i>
-                        <label class="filters--label">Économique</label>
-                    </button>
-                    <button class="filters--button">
-                        <i class="fas fa-child filters--icon icon-color"></i>
-                        <label class="filters--label">Familial</label>
-                    </button>
-                    <button class="filters--button">
-                        <i class="fas fa-heart filters--icon icon-color"></i>
-                        <label class="filters--label">Romantique</label>
-                    </button>
-                    <button class="filters--button">
-                        <i class="fas fa-dog filters--icon icon-color"></i>
-                        <label class="filters--label">Animaux autorisés</label>
-                    </button>
+                    <div class="filters--button-section">
+                        <button class="filters--button">
+                            <i class="fas fa-money-bill-wave filters--icon icon-color"></i>
+                            <label class="filters--label">Économique</label>
+                        </button>
+                        <button class="filters--button">
+                            <i class="fas fa-child filters--icon icon-color"></i>
+                            <label class="filters--label">Familial</label>
+                        </button>
+                        <button class="filters--button">
+                            <i class="fas fa-heart filters--icon icon-color"></i>
+                            <label class="filters--label">Romantique</label>
+                        </button>
+                        <button class="filters--button">
+                            <i class="fas fa-dog filters--icon icon-color"></i>
+                            <label class="filters--label">Animaux autorisés</label>
+                        </button>
+                    </div>
                 </div>
             </form>
-            <span class="l-information">
+
+            <span class="information">
                 <i class="fas fa-info fa-lg icon-color"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </span>
@@ -74,11 +86,11 @@
 
         <!-- Accommodation section -->
 
-        <section class="l-accommodation">
-            <div class="l-accommodation--section">
-                <h2 id="anchor-1" class="accomodation--title">Hébergements à Marseille</h2>
-                <div class="l-accommodation--content">
-                    <div class="l-accommodation--cards-container">
+        <section class="accommodation">
+            <div class="accommodation--section">
+                <h2 class="accommodation--title" id="anchor-1">Hébergements à Marseille</h2>
+                <div class="accommodation--content">
+                    <div class="accommodation--cards-container">
                         <a href="#">
                             <div class="card accommodation--card">
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="accomodation--card-image">
@@ -186,13 +198,13 @@
                 </div>
             </div>
 
-            <aside class="l-most-popular">
+            <aside class="most-popular">
                 <span class="most-popular--title">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line fa-lg most-popular--icon"></i>
                 </span>
-                <div class="l-most-popular--content">
-                    <div class="l-most-popular--cards-container">
+                <div class="most-popular--content">
+                    <div class="most-popular--cards-container">
                         <a href="#">
                             <div class="card most-popular--card">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="most-popular--card-image">
@@ -250,10 +262,10 @@
 
         <!-- Activities section -->
 
-        <section>
-            <h2 id="anchor-2">Activités à Marseille</h2>
-            <div class="l-activities">
-                <div class="l-activities--section">
+        <section class="activities--container">
+            <h2 id="anchor-2" class="activities--title">Activités à Marseille</h2>
+            <div class="activities">
+                <div class="activities--section">
                     <a href="#">
                         <div class="card activities--card card-size-1">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activities--card-image image-size-1">
@@ -261,7 +273,7 @@
                         </div>
                     </a>
 
-                    <div class="l-activities--section-inner-right">
+                    <div class="activities--section-inner-right">
                         <a href="#">
                             <div class="card activities--card card-size-2">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activities--card-image image-size-2">
@@ -277,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="l-activities--section">
+                <div class="activities--section">
                     <a href="#">
                         <div class="card activities--card card-size-1">
                             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="activities--card-image image-size-1">
@@ -285,7 +297,7 @@
                         </div>
                     </a>
 
-                    <div class="l-activities--section-inner-right">
+                    <div class="activities--section-inner-right">
                         <a href="#">
                             <div class="card activities--card card-size-3">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activities--card-image image-size-3">
@@ -307,22 +319,22 @@
 
     <!-- Footer -->
 
-    <footer class="l-footer">
-        <div class="l-footer--content">
-            <div>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--content">
                 <h4>A propos</h4>
                 <p>Fonctionnement du site</p>
                 <p>Conditions générales de vente</p>
                 <p>Données et confidentialité</p>
             </div>
 
-            <div>
+            <div class="footer--content">
                 <h4>Nos hébergements</h4>
                 <p>Charte qualité</p>
                 <p>Soumettre votre hôtel</p>
             </div>
 
-            <div>
+            <div class="footer--content">
                 <h4>Assistance</h4>
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
