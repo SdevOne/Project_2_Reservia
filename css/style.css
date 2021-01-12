@@ -767,19 +767,48 @@ button {
         width: 100rem;
     }
 
-    .accommodation {
-        margin-bottom: 4rem;
+    .main-title {
+        margin-bottom: 3rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-line-pack: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
     }
 
-    .most-popular {
+    .search-bar {
+        margin: 2rem auto 3.5rem;
+    }
+
+    .information {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .accommodation {
+        margin-bottom: 5rem;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .accommodation--section {
         margin-bottom: 4rem;
+    }
+
+    .most-popular {
+        margin-bottom: 0;
     }
 
     .activities--title {
