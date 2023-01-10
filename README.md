@@ -1,2 +1,2 @@
-# NdiayeSalmane_2_03122020
+# Reservia
  Model of the Réservia site
